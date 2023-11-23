@@ -1,0 +1,184 @@
+/* MARK HEADER  */
+:root {
+  --green: rgb(38, 155, 38);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: min-content;
+  padding: 20px;
+  background-color: dodgerblue;
+}
+
+.navigation-header a {
+  color: #fff;
+}
+
+.navigation-header .tengah a span {
+  color: red;
+}
+
+.navigation-header a span {
+  color: var(--green);
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  color: aqua;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0.1rem;
+}
+
+.navigation a:hover {
+  color: var(--green);
+}
+
+.navigation a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--green);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: 1px 1px 3px black;
+  color: aqua;
+}
+
+.title-header span {
+  color: dodgerblue;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: rgb(25, 155, 25);
+  color: white;
+  border-bottom: 2px solid dodgerblue;
+}
+
+/* MARK MAIN */
+
+#main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+
+.review-section {
+  flex-basis: 60%;
+  flex-grow: 0;
+}
+
+.review-section img {
+  max-width: 140%;
+  max-height: 100%;
+}
+
+/* .container {
+  width: 100%;
+  padding: 20px;
+} */
+
+/* .sliders {
+  width: 100%;
+  height: 100vh;
+} */
+
+/* .slider img {
+  width: 100%;
+} */
+
+.message-us {
+  flex-basis: 40%;
+  flex-grow: 0;
+  background-color: dodgerblue;
+  text-align: center;
+  border-top: 2px solid rgb(25, 155, 25);
+  box-shadow: 4px 4px 8px 4px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px, 15px, 30px;
+}
+
+.input-message-us {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 24px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--green);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: dodgerblue;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit a {
+  color: rgb(5, 22, 177);
+  font-weight: 700;
+}
+
+/* @media  and (max-width: 600px) {
+  .title-header {
+    background
+  }
+  
+} */
